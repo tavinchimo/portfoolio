@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    a:link { 
+        text-decoration: none; 
+        
+      } 
+      a:visited { 
+        text-decoration: none; 
+      } 
+      a:hover { 
+        text-decoration: none;
+
+      } 
+      a:active { 
+        text-decoration: none; 
+      }
+      a::before {
+        text-decoration: none;
+      }
+}
+
+html, body {
+ height: 200%;
+ overflow: hidden;
+}
+
+.socialmediaicon{
+color: rgb(255, 255, 255);
+font-size: 2.5rem;
+display: flex;
+justify-content: space-evenly;
+margin-top: 6rem;
+}
+
+i{
+    color: white;
+    margin-bottom: 100px;
+    display: flex;
+}
+
+.singlecol{
+    max-width: 750px;
+    margin: 3rem auto;
+    color: white;
+    display: flex;
+    max-height: fit-content;
+    min-height: fit-content;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+font-weight: 500;
+background: rgb(7, 2, 255);
+background: linear-gradient( rgba(0, 0, 0, 0.603) 0%, rgba(0, 0, 0, 0.295) 48%, rgba(0, 0, 0, 0) 100%);
+color: white;
+height: 100px;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+font-weight: 900;
+font-size: 8vw;
+color: white;
+margin-top: 20rem;
+margin-bottom: 14.5rem;
+}
+
+.moving{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.moving .moving-bg{
+    box-sizing: content-box;
+    padding-bottom: 300px;
+    position: absolute;
+    height: 100%;
+    width: 150%;
+    z-index: -1;
+    background-image: url(lehetaustunblurred.png);
+    background-size: cover;
+    background-attachment: fixed;
+    animation: moving 40s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        transform: translateX(0)   
+    }
+    40%{
+        transform: translateX(-200px)   
+    }
+    50% {
+        transform: translateX(-230px)   
+    }
+    60%{
+        transform: translateX(-200px)   
+    }
+    100%{
+        transform: translateX(0)   
+    }
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.flexkast {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    overflow-y: auto;
+  }
+
+  .flexkast img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow-y: auto;
+  }
+
+  .flexkast::after {
+    content: "";
+    width: 1082px;
+    overflow-y: auto;
+  }
