@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  a:active {
+    text-decoration: none;
+  }
+  a::before {
+    text-decoration: none;
+  }
+}
+
+:root { scroll-behavior: smooth; }
+
+h1 {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  color: white;
+  height: 100px;
+}
+
+h2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 900;
+  font-size: 8vw;
+  color: white;
+}
+
+.moving1 {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+.moving1 .container{
+  box-sizing: content-box;
+  padding-bottom: 300px;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 150%;
+  z-index: -1;
+  background-image: url(lehetaustunblurred.png);
+  animation: moving1 40s linear infinite;
+}
+
+@keyframes moving1 {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(-110px);
+  }
+  60% {
+    transform: translateX(-100px);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.moving2 {
+  height: 100%;
+  width: 100%;
+}
+
+.moving2 .container{
+  box-sizing: content-box;
+  padding-bottom: 300px;
+  position: absolute;
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  width: 150%;
+  z-index: -1;
+  background-image: url(lehetaustunblurred.png);
+  animation: moving2 40s linear infinite;
+}
+
+@keyframes moving2 {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(-110px);
+  }
+  60% {
+    transform: translateX(-100px);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+p {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  line-height: 50px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-content: center;
+}
+
+.logo_container {
+  grid-column: 1; 
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header_title {
+  display: flex;
+  grid-column: 2;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.header_menu {
+  display: flex;
+  grid-column: 3;
+  gap: 40px;
+  justify-content: end;
+  padding-right: 40px;
+  align-self: center;
+}
+
+.main_title {
+  display: flex;
+  width: 100%;
+  padding-top: 240px;
+  justify-content: center;
+  padding-bottom: 13vw;
+}
+
+.socialmedias{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.socialicons {
+  display:flex;
+  grid-column: 2;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  justify-content: space-around;
+}
+
+a{
+  color:white;
+}
+
+a:visited{
+  color:white;
+}
+
+.infobox{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vw;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 50vw;
+  height: 260px;
+}
+
+.infobox2{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vw;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 50vw;
+  gap: 20px;
+  height: 330px;
+  margin-bottom: 50px;
+}
+
+.taustakast{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 70vw;
+  padding-bottom: 20px;
+
+}
+
+.informatsioon{
+  color: white;
+  font-size: 1.3vw;
+  margin-top: 20px;
+}
+
+.informatsioon2{
+  color: white;
+  font-size: 1.5vw;
+}
+
+.informatsioon3{
+  color: white;
+  font-size: 1.3vw;
+  font-weight: 300;
+}
+
+.informatsioon4{
+  color: white;
+  text-align: justify;
+  font-size: 1.2vw;
+  font-weight: 300;
+  margin-left: 40px;
+  padding-right: 35px;
+  gap: 0px;
+}
+
+.taavitekst{
+  color:white;
+}
+
+.kategooriagrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.kategooriad {
+  color: white;
+  display: flex;
+  grid-column: 2;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  gap: 70px;
+  margin-top: 1vw;
+}
+
+.pildikesed {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  object-fit: cover;
+}
+
+.pildikesed img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pildikesed::after {
+  content: "";
+  width: 350px;
+}
+
+img {
+  transition:transform 0.5s ease;
+}
+
+img:hover {
+  -webkit-transform:scale(1.3);
+  transform:scale(1.3);
+}
+
+.topscroll{
+  grid-column: 2;
+}
+
+.center{
+  margin-left: 12.5vw;
+  font-weight: 600;
+  margin-top: -0.5vw;
+}
+
+.scroller{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+@media only screen and (max-width:700px) {
+
+  .socialicons {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    width: 250px;
+  }
+
+  .main_title {
+    display: flex;
+    width: 100%;
+    padding-top: 70vw;
+    justify-content: center;
+    padding-bottom: 70vw;
+  }
+
+  .header_title {
+    display: flex;
+    grid-column: 2;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    text-align: center;
+    padding-left: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .header_menu {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3;
+    gap: 4px;
+    justify-content: flex-end;
+    align-self: center;
+  }
+
+  p {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 25px;
+    width: 60px;
+  }
+
+  .informatsioon4{
+    color: white;
+    text-align: justify;
+    font-size: 4.2vw;
+    font-weight: 300;
+    margin-left: 40px;
+    padding-right: 35px;
+    gap: 0px;
+  }
+
+    .informatsioon{
+      color: white;
+      font-size: 8.3vw;
+      margin-top: 20px;
+    }
+
+    .infobox{
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10vw;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border:1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      width: 100%;
+      height: 260px;
+    }
+
+    .infobox2{
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10vw;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border:1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      width: 100%;
+      gap: 20px;
+      height: 400px;
+      margin-bottom: 20px;
+    }
+
+    .informatsioon2{
+      color: white;
+      font-size: 6.5vw;
+    }
+    
+    .informatsioon3{
+      color: white;
+      font-size: 5.3vw;
+      font-weight: 300;
+    }
+    
+    .taustakast{
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border:1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      width: 100%;
+      padding-bottom: 20px;
+    
+    }
+    
+    .pildikesed {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px 10px;
+      object-fit: cover;
+    }
+
+}
